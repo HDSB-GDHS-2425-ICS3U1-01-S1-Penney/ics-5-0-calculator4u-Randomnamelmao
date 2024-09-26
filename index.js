@@ -1,16 +1,17 @@
 
 function calculator() {
-    let start = parseInt(prompt("Welcome to calculator #1259, please enter 1 if you want to do basic math and 2 if you want to do unit conversion"));
-    
-    if (start = "1") {
-        let num1 = parseInt(prompt("please enter your first number"))
-        if(isNaN(num1)) {
-            console.log("Thats not a number try again") 
-            return;
+    //prompts what number you want your first number to be
+    let num1 = parseInt(prompt("Welcome to calculator #1259, please enter a number."));
+    //checks if its not a number and if it is makes a message and ends the code
+    if(isNaN(num1)) {
+        console.log("Thats not a number try again") 
+        return;
     }
+    //prompts what you want your opration to be
     let operation = prompt("Enter your opration (+,-,*,/)");
-    
+    //prompt what number you want your second number to be
     let num2 = parseInt(prompt("Please enter your second number"));
+    //checks if its not a number and if it is makes a message and ends the code
     if(isNaN(num2)) {
         console.log("Thats not a number try again");
         return;
@@ -34,5 +35,5 @@ function calculator() {
         console.log("That's not a valid opration try again");
     }
 }
-}
+
 calculator();
